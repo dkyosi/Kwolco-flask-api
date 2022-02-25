@@ -22,10 +22,16 @@ Your database url form database/connection.py on line 8
 should follow the following format.
 
 
-url = 'postgresql://postgres:<database password>@localhost/<database name>'
+url = 'postgresql://postgres:< database_password >@localhost/< database_name>'
 
 Once the connection is established , now run the app using:
 
 flask run
 
 This will open dev server on port 5000
+
+http://localhost:5000/
+
+Bolow is a postman collection : 
+
+https://documenter.getpostman.com/view/7313595/UVkpPvcH
