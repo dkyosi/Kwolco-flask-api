@@ -4,7 +4,6 @@ class Config(object):
     """ application configuration class """
     DEBUG = False
     SECRET = 'SECRET'
-    DATABASE_URL =''
     
 class DevelopmentConfig(Config):
     """ Configurations for Development """

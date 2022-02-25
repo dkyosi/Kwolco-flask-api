@@ -128,6 +128,7 @@ class Users(Helper):
             response.status_code = 500
             return response
         
+    @jwt_required
     def get_user_by_username(self, username):
         query = "SELECT * from users where username='{}'".format(username)
         connect = connection.dbconnection()

@@ -32,5 +32,6 @@ def create_app(config_name):
     app.config['JWT_ACCESS_TOKEN_EXPIRES'] = timedelta(days=100) 
     jwt = JWTManager(app)
     app.secret_key = "secret key"
+  
     
     return app

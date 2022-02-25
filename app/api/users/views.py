@@ -3,7 +3,7 @@
 from flask_restful import Resource, reqparse
 from flask import request, Blueprint, jsonify, Flask
 app = Flask(__name__)
-from app.api.users.reg_users.models import Users
+from app.api.users.models import Users
 from app.api.validators.validator import validate_data_signup
 
 auth_blueprint = Blueprint('auth', __name__)
